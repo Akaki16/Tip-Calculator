@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class='header'>
+        <h1 class='header-title'>Tip Calculator</h1>
+    </header>
+
+    <div class="message-box">
+        <p class="message"></p>
+    </div>
+
+    <div class="calculator">
+        <form class='calculator-form'>
+            <div class="form-group">
+                <input type="number" id="bill_amount" placeholder="What is the bill amount?">
+            </div>
+            <div class="form-group">
+                <!-- <input type="number" id="tip_rate" placeholder="What is the tip rate?"> -->
+                <select class="slider">
+                    <option selected disabled value="">What is the tip rate?</option>
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="form-btn calculate-btn" type="submit">
+                    calculate
+                </button>
+                <button class="form-btn clear-btn" type="button">
+                    clear results
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="results">
+        <h2 class="tip"></h2>
+        <h2 class="total"></h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
